@@ -1,4 +1,5 @@
 import React from 'react';
+import './movieCard.scss';
 
 /* eslint-disable react/prop-types */
 const MovieCard = (props) => {

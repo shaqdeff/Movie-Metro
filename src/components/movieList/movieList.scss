@@ -1,11 +1,18 @@
 @import '../../sass/variables';
 
-.movie-list {
+.movie-wrapper {
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.movie-list,
+.shows-list {
   margin: 20px 0px;
   h2 {
-    color: $main-color;
+    color: $txt-color;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 700;
   }
 }
 

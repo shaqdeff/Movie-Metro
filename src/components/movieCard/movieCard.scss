@@ -1,0 +1,42 @@
+@import '../../sass/variables';
+
+.movie-card {
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.card-top {
+  height: 300px;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+
+.card-bottom {
+  padding: 20px;
+}
+
+.card-info {
+  color: $txt-color;
+
+  h4 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
