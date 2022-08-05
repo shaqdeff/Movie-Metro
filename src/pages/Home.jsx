@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="movie-section">
+    <div className="movies">
       <MovieList />
     </div>
   );

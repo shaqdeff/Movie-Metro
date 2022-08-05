@@ -1,4 +1,4 @@
-@import '../../sass/variables';
+@import '../../sass/';
 
 .movie-wrapper {
   padding: 30px;
@@ -10,7 +10,7 @@
   margin: 20px 0;
 
   h2 {
-    color: $txt-color;
+    color: rgb(179, 86, 86);
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -20,5 +20,10 @@
 .movie-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 20px;
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -3,7 +3,7 @@
 
 .footer {
   position: relative;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,13 +15,15 @@
     &__logo {
       @include flex(center, center);
       margin-bottom: 3rem;
+      font-size: 1.2rem;
     }
 
     &__menus {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10rem;
-      padding-left: 30px;
+      padding-left: 100px;
+      margin-top: -20px;
 
       @include mobile {
         grid-template-columns: repeat(2, 1fr);
@@ -33,8 +35,7 @@
       @include flex(flex-start, flex-start);
       flex-direction: column;
       margin-top: 1rem;
-
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 600;
 
       & > * ~ * {
