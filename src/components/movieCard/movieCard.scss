@@ -4,6 +4,9 @@
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  min-height: 450px;
+  height: 100%;
+  margin: 10px;
 
   &:hover {
     transform: scale(1.05);

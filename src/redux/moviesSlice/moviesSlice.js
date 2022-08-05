@@ -5,7 +5,7 @@ import APIKey from '../../api/movieApiKey';
 export const fetchAsyncMovies = createAsyncThunk(
   'movies/fetchAsyncMovies',
   async () => {
-    const movieText = 'Lord';
+    const movieText = 'Now';
     const response = await movieApi.get(
       `?apiKey=${APIKey}&s=${movieText}&type=movie`
     );
@@ -16,7 +16,7 @@ export const fetchAsyncMovies = createAsyncThunk(
 export const fetchAsyncShows = createAsyncThunk(
   'movies/fetchAsyncShows',
   async () => {
-    const seriesText = 'Friends';
+    const seriesText = 'Game';
     const response = await movieApi.get(
       `?apiKey=${APIKey}&s=${seriesText}&type=series`
     );
@@ -69,8 +69,10 @@ const moviesSlice = createSlice({
   },
 });
 
+/* eslint-disable implicit-arrow-linebreak */
 export const { addMovies } = moviesSlice.actions;
 export const getAllMovies = (state) => state.movies.movies;
 export const getAllShows = (state) => state.movies.shows;
-export const getSelectedMovieOrShow = (state) => state.movies.selectedMovieOrShow;
+export const getSelectedMovieOrShow = (state) =>
+  state.movies.selectedMovieOrShow;
 export default moviesSlice.reducer;

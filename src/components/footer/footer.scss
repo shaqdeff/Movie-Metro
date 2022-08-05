@@ -26,8 +26,10 @@
       margin-top: -20px;
 
       @include mobile {
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -85px;
       }
     }
 
