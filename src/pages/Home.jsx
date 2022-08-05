@@ -22,7 +22,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="movie-section">
       <MovieList />
     </div>
   );
