@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
@@ -20,9 +21,9 @@ const Details = () => {
   return (
     <div>
       <div className="back-container">
-        <a href="/" className="back-btn">
+        <Link to="/" className="back-btn">
           <IoMdArrowRoundBack />
-        </a>
+        </Link>
       </div>
       <div className="movie-section">
         {Object.keys(data).length === 0 ? (
