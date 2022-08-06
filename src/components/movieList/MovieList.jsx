@@ -1,10 +1,19 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { getAllMovies, getAllShows } from '../../redux/moviesSlice/moviesSlice';
+import React, { useState } from 'react';
+// import { IoSearchCircleSharp } from 'react-icons/io';
+import Slider from 'react-slick';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  getAllMovies,
+  getAllShows,
+  fetchAsyncMovies,
+  fetchAsyncShows,
+} from '../../redux/moviesSlice/moviesSlice';
 import MovieCard from '../movieCard/MovieCard';
+import Settings from '../../settings';
 import './movieList.scss';
 
 /* eslint-disable operator-linebreak */
+/* eslint-disable react/jsx-props-no-spreading */
 const MovieList = () => {
   const movies = useSelector(getAllMovies);
   const shows = useSelector(getAllShows);
@@ -31,15 +40,44 @@ const MovieList = () => {
       </div>
     );
 
+  const [term, setTerm] = useState('');
+  const dispatch = useDispatch();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    dispatch(fetchAsyncMovies(term));
+    dispatch(fetchAsyncShows(term));
+    setTerm('');
+  };
+
   return (
-    <div className="movie-wrapper">
-      <div className="movie-list">
-        <h2>Movies</h2>
-        <div className="movie-container">{renderMovies}</div>
+    <div>
+      <div className="search-bar">
+        <form onSubmit={submitHandler}>
+          <input
+            type="text"
+            value={term}
+            placeholder="search movies"
+            onChange={(e) => setTerm(e.target.value)}
+          />
+          <button type="submit">
+            <i className="fa fa-search" />
+          </button>
+        </form>
       </div>
-      <div className="shows-list">
-        <h2>Shows</h2>
-        <div className="movie-container">{renderShows}</div>
+      <div className="movie-wrapper">
+        <div className="movie-list">
+          <h2>Movies</h2>
+          <div className="movie-container">
+            <Slider {...Settings}>{renderMovies}</Slider>
+          </div>
+        </div>
+        <div className="shows-list">
+          <h2>Shows</h2>
+          <div className="movie-container">
+            <Slider {...Settings}>{renderShows}</Slider>
+          </div>
+        </div>
       </div>
     </div>
   );

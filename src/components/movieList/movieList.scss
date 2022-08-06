@@ -1,8 +1,9 @@
-@import '../../sass/variables';
+/* stylelint-disable at-rule-no-unknown */
+@import '../../sass/';
 
 .movie-wrapper {
   padding: 30px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .movie-list,
@@ -10,15 +11,58 @@
   margin: 20px 0;
 
   h2 {
-    color: $txt-color;
+    color: #d95d39;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
+    text-transform: uppercase;
   }
 }
 
-.movie-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-gap: 15px;
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-self: center;
+  margin-left: 400px;
+  margin-top: 130px;
+  margin-bottom: -85px;
+
+  @include mobile {
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: -85px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+
+    button {
+      padding: 0 8px;
+      font-size: 20px;
+      cursor: pointer;
+      height: 36px;
+      width: 42px;
+      border: none;
+      background: #d95d39;
+      outline: none;
+      border-radius: 10px;
+      margin-left: 10px;
+      margin-top: 2px;
+    }
+  }
+
+  input {
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: #272727;
+    color: $txt-color;
+  }
 }

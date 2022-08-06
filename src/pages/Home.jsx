@@ -9,14 +9,16 @@ import {
 /* eslint-disable arrow-body-style */
 const Home = () => {
   const dispatch = useDispatch();
+  const movieText = 'Now';
+  const showText = 'Game';
 
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(showText));
   }, []);
 
   return (
-    <div className="movie-section">
+    <div className="movies">
       <MovieList />
     </div>
   );

@@ -1,13 +1,23 @@
-@import '../../sass/variables';
+/* stylelint-disable at-rule-no-unknown */
+@import '../../sass/';
 
 .movie-card {
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  min-height: 450px;
+  height: 100%;
+  margin: 10px 0 0 35px;
+  width: 80%;
 
   &:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+  }
+
+  @include mobile {
+    width: 80%;
+    margin-left: 50px;
   }
 }
 
@@ -15,9 +25,14 @@
   height: 300px;
 
   img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
+
+    @include mobile {
+      width: 90%;
+      height: 90%;
+    }
   }
 }
 
@@ -30,9 +45,14 @@
 
   h4 {
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: $main-color;
+
+    @include mobile {
+      margin-top: -30px;
+    }
   }
 
   p {
