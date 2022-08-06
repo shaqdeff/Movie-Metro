@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="search-bar"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        placeholder="search movies"
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        <i
+          className="fa fa-search"
+        />
+      </button>
+    </form>
+  </div>
+  <div
+    className="movie-wrapper"
+  >
+    <div
+      className="movie-list"
+    >
+      <h2>
+        Movies
+      </h2>
+      <div
+        className="movie-container"
+      >
+        <div
+          className="slick-slider slick-initialized"
+        >
+          <div
+            className="slick-list"
+          >
+            <div
+              className="slick-track"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              style={
+                Object {
+                  "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                  "WebkitTransition": "",
+                  "msTransform": "translateX(0px)",
+                  "opacity": 1,
+                  "transform": "translate3d(0px, 0px, 0px)",
+                  "transition": "",
+                }
+              }
+            >
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active slick-current"
+                data-index={0}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="movies-error"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <h3 />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active slick-cloned"
+                data-index={1}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="movies-error"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <h3 />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="shows-list"
+    >
+      <h2>
+        Shows
+      </h2>
+      <div
+        className="movie-container"
+      >
+        <div
+          className="slick-slider slick-initialized"
+        >
+          <div
+            className="slick-list"
+          >
+            <div
+              className="slick-track"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              style={
+                Object {
+                  "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                  "WebkitTransition": "",
+                  "msTransform": "translateX(0px)",
+                  "opacity": 1,
+                  "transform": "translate3d(0px, 0px, 0px)",
+                  "transition": "",
+                }
+              }
+            >
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active slick-current"
+                data-index={0}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="shows-error"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <h3 />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active slick-cloned"
+                data-index={1}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="shows-error"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <h3 />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Movie Metro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Metro is a single page application that allows users to search for any movie or show's ratings and details.
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- React
+- Redux
+- SASS
+- OMDB API
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Click [here](https://super-space-hub.netlify.app/) to view the live demo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running follow these simple steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- A web browser (e.g. Mozilla Firefox, Google Chrome etc.)
+- git: This is a version control system used for source code management.
+- A text editor (e.g Visual Studio Code (recommended), Sublime Text, Atom etc.)
+- Browser Engine on your terminal preferably NodeJs
+- Knowledge of HTML, CSS, JavaScript and React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- With git, clone the code to your machine, or download a ZIP of all the files directly.
+- [Download the ZIP file from this location](https://github.com/shaqdeff/Movie-Metro/archive/refs/heads/develop.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/shaqdeff/Movie-Metro.git
+```
 
-### `npm run eject`
+- Once the files are on your machine, open the **Micro-Space-Hub** folder in [Visual Studio Code](https://code.visualstudio.com/download).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- After opening the files in Visual Studio Code, open the **VS Code** integrated terminal and run the following commands:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will install all the packages and dependencies used in the project.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Run the following command to start a live server on your computer:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
 
-### Code Splitting
+This will open up the project on a browser on `localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Test
 
-### Analyzing the Bundle Size
+- Run the following command to run the test suite:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm test
+```
 
-### Making a Progressive Web App
+This will run the unit tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Authors
 
-### Advanced Configuration
+👤 **Shaquille Ndunda**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- GitHub: [@shaqdeff](https://github.com/shaqdeff)
+- Twitter: [@shaquillendunda](https://twitter.com/shaquillendunda)
+- LinkedIn: [Shaquille Ndunda](https://www.linkedin.com/in/shaquille-ndunda-b13a95107/)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
 
-### `npm run build` fails to minify
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse.
+- Redux ToolKit Team

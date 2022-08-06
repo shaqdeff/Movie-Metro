@@ -1,0 +1,10 @@
+/* stylelint-disable */
+@mixin flex($align-item, $justify-content) {
+  display: flex;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}
+
+@mixin overlay {
+  background-color: rgba($color: #000, $alpha: 0.6);
+}

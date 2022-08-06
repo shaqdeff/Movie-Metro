@@ -1,0 +1,48 @@
+/* stylelint-disable */
+@use '../../sass/' as *;
+
+.footer {
+  position: relative;
+  padding: 2rem 2rem 4rem 2rem;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  &__content {
+    max-width: 1000px;
+
+    &__logo {
+      @include flex(center, center);
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
+    }
+
+    &__menus {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10rem;
+      padding-left: 100px;
+      margin-top: -20px;
+
+      @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -85px;
+      }
+    }
+
+    &__menu {
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+
+      & > * ~ * {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
