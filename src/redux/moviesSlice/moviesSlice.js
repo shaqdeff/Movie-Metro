@@ -31,12 +31,14 @@ export const fetchAsyncMoviesOrShowsDetails = createAsyncThunk(
 );
 
 const initialState = {
+  status: 'idle',
   movies: {},
   shows: {},
   selectedMovieOrShow: {},
 };
 
 /* eslint-disable no-param-reassign */
+/* eslint-disable arrow-body-style */
 const moviesSlice = createSlice({
   name: 'movies',
   initialState,
@@ -46,23 +48,20 @@ const moviesSlice = createSlice({
     },
   },
   extraReducers: {
-    [fetchAsyncMovies.pending]: () => {
-      console.log('pending');
+    [fetchAsyncMovies.pending]: (state) => {
+      state.status = 'loading';
     },
     [fetchAsyncMovies.fulfilled]: (state, { payload }) => {
-      console.log('fetched successfully');
       return { ...state, movies: payload };
     },
     [fetchAsyncShows.fulfilled]: (state, { payload }) => {
-      console.log('fetched successfully');
       return { ...state, shows: payload };
     },
     [fetchAsyncMoviesOrShowsDetails.fulfilled]: (state, { payload }) => {
-      console.log('fetched successfully');
       return { ...state, selectedMovieOrShow: payload };
     },
-    [fetchAsyncMovies.rejected]: () => {
-      console.log('fetched successfully');
+    [fetchAsyncMovies.rejected]: (state) => {
+      state.status = 'failed';
     },
   },
 });
