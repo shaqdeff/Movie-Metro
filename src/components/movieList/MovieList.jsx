@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { IoSearchCircleSharp } from 'react-icons/io';
 import Slider from 'react-slick';
 import { useDispatch, useSelector } from 'react-redux';
 import {
