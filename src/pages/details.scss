@@ -61,7 +61,8 @@
 
 .movie-info {
   @include mobile {
-    width: 90vw;
+    width: 80vw;
+    font-size: 10px;
   }
 }
 
@@ -82,17 +83,25 @@
 
 .fa-star {
   color: #ff9e00;
+  margin-left: 5px;
+  margin-right: 2px;
 }
 .fa-thumbs-up {
   color: #fafafa;
+  margin-left: 5px;
+  margin-right: 2px;
 }
 
 .fa-film {
   color: rgb(191, 213, 214);
+  margin-left: 5px;
+  margin-right: 2px;
 }
 
 .fa-calendar {
   color: peachpuff;
+  margin-left: 5px;
+  margin-right: 2px;
 }
 
 .section-right {
@@ -103,5 +112,22 @@
     @include mobile {
       margin-left: -20px;
     }
+  }
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: $main-color;
+  font-size: 2.3rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  @include mobile {
+    top: 70px;
   }
 }

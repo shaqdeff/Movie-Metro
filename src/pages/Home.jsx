@@ -9,10 +9,12 @@ import {
 /* eslint-disable arrow-body-style */
 const Home = () => {
   const dispatch = useDispatch();
+  const movieText = 'Now';
+  const showText = 'Game';
 
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(showText));
   }, []);
 
   return (

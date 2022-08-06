@@ -6,7 +6,8 @@
   transition: all 0.3s ease-in-out;
   min-height: 450px;
   height: 100%;
-  margin: 10px;
+  margin: 10px 0 0 35px;
+  width: 80%;
 
   &:hover {
     transform: scale(1.05);
@@ -14,7 +15,8 @@
   }
 
   @include mobile {
-    width: 100%;
+    width: 80%;
+    margin-left: 50px;
   }
 }
 
