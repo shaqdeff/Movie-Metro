@@ -27,7 +27,7 @@ const Header = () => {
             <li key={item.id} className={active === item.id ? 'active' : ''}>
               <Link to={item.link}>
                 {item.name}
-                <i className="fa fa-home" style={{ paddingLeft: '3px' }} />
+                <i className="fa fa-home" style={{ paddingLeft: '5px' }} />
               </Link>
             </li>
           ))}

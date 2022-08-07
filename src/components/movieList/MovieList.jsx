@@ -56,7 +56,7 @@ const MovieList = () => {
           <input
             type="text"
             value={term}
-            placeholder="search movies"
+            placeholder="search movie/show"
             onChange={(e) => setTerm(e.target.value)}
           />
           <button type="submit">
