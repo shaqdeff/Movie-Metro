@@ -7,14 +7,6 @@ const headerNav = [
     name: 'Home',
     link: '/',
   },
-  {
-    name: 'Movies',
-    link: '/movie',
-  },
-  {
-    name: 'TV Shows',
-    link: '/tv',
-  },
 ];
 
 /* eslint-disable arrow-body-style */
@@ -33,7 +25,10 @@ const Header = () => {
         <ul className="header__nav">
           {headerNav.map((item) => (
             <li key={item.id} className={active === item.id ? 'active' : ''}>
-              <Link to={item.link}>{item.name}</Link>
+              <Link to={item.link}>
+                {item.name}
+                <i className="fa fa-home" style={{ paddingLeft: '3px' }} />
+              </Link>
             </li>
           ))}
         </ul>

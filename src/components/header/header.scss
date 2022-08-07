@@ -28,6 +28,7 @@
   background: #0a0a0c;
   z-index: 99;
   transition: height 0.3s ease, background-color 0.3s ease;
+  overflow-x: hidden;
 
   &.shrink {
     height: $header-shrink-height;
@@ -74,6 +75,10 @@
       &.active::after,
       &:hover::after {
         width: 100%;
+      }
+
+      @include mobile {
+        font-size: 1.4rem;
       }
     }
 
