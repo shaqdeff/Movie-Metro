@@ -110,6 +110,8 @@
     border-radius: 10px;
 
     @include mobile {
+      width: 120px;
+      height: 120px;
       margin-bottom: 40px;
       margin-left: -20px;
     }

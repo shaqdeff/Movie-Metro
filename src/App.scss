@@ -28,6 +28,7 @@ body {
   line-height: 1.5;
   background-color: $body-bg;
   color: $txt-color;
+  overflow-x: hidden;
 
   @include mobile {
     margin-bottom: 3rem;

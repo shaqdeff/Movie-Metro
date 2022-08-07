@@ -5,6 +5,7 @@ import {
   fetchAsyncMovies,
   fetchAsyncShows,
 } from '../redux/moviesSlice/moviesSlice';
+import './home.scss';
 
 /* eslint-disable arrow-body-style */
 const Home = () => {
