@@ -85,5 +85,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse.
 - Redux ToolKit Team
